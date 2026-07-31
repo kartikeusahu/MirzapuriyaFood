@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343668173562",
+    "project_id": "mirzapuriyafood",
+    "storage_bucket": "mirzapuriyafood.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343668173562:android:b38b37148cbc4c0f70f743",
+        "android_client_info": {
+          "package_name": "com.example.mirzapuriyafood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpzbd_5KHGZhp1SP0gysfaoDNzQwSzmLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

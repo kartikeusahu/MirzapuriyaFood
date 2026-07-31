@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MirzapuriyaFood" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MirzapuriyaFood" parent="Base.Theme.MirzapuriyaFood">
+    <item name="colorPrimary">#FF8C00</item> <!-- Bright Orange -->
+    <item name="colorPrimaryDark">#FFA500</item> <!-- Deep Orange -->
+    <item name="colorAccent">#FFD700</item></style>
+
+    <style name="Theme.MirzapuriyaFood.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">#FF8C00</item> <!-- Bright Orange -->
+        <item name="colorPrimaryDark">#FFA500</item> <!-- Deep Orange -->
+        <item name="colorAccent">#FFD700</item> <!-- Vivid Yellow -->
+    </style>
+
+    <style name="Theme.MirzapuriyaFood.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MirzapuriyaFood.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

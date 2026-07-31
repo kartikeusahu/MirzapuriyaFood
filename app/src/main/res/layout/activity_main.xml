@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/backf"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/opacity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+
+            android:layout_height="125dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/dinner"
+            app:tint="#ffff" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="cursive"
+            android:text="Mirzapuriya Food"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="60dp" />
+
+        <Button
+            android:id="@+id/loginm"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_gradent"
+            android:text="LOGIN"
+            android:backgroundTint="@null"
+            android:textColor="#F8FAF8F8"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/regbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@null"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_gradent"
+            android:text="REGISTER"
+            android:textColor="#F8FAF8F8"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Already Logged In?"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>

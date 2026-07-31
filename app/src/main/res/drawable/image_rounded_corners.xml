@@ -1,0 +1,15 @@
+<!-- res/drawable/image_rounded_corners.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Background fill (optional, can be transparent if you only want rounded clipping) -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- Rounded corners -->
+    <corners android:radius="12dp" />
+
+    <!-- Optional stroke for border -->
+    <stroke
+        android:width="1dp"
+        android:color="#DDDDDD" />
+</shape>

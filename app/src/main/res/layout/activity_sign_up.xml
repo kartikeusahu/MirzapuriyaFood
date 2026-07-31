@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backf"
+    tools:context=".SignUp_Activity">
+
+    <!-- Semi-transparent overlay -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/dopacity"
+        android:orientation="vertical">
+
+        <!-- Profile Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logof"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Upload Image"
+            android:layout_marginTop="10dp"
+
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <!-- Scrollable Form -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Username -->
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/backgroundeditview"
+                    android:hint="Enter User Name"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Country Code Picker -->
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:ccp_showFlag="true"
+                        app:ccp_arrowColor="@color/white"
+                        app:ccp_contentColor="@color/white"
+                        android:background="@drawable/backgroundeditview"
+                        app:ccp_showNameCode="false"
+                        app:ccp_showPhoneCode="true"
+                        app:ccp_defaultNameCode="IN" />
+
+                    <!-- Phone Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:hint="Phone Number"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundeditview"
+                            android:inputType="phone"
+                            android:textColor="@color/white"
+                            android:maxLength="10"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- Email -->
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/backgroundeditview"
+                    android:hint="Enter Email ID"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp" />
+
+                <!-- Password -->
+                <EditText
+                    android:id="@+id/editTextNumberPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/backgroundeditview"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp" />
+
+                <!-- Register Button -->
+                <Button
+                    android:id="@+id/buttonRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_gradent"
+                    android:text="REGISTER"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:padding="12dp" />
+
+                <!-- Divider -->
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="---- Or With ----"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+                <!-- Social Login Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <!-- Google -->
+                    <Button
+                        android:id="@+id/btnGoogle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/google_button_bg"
+                        android:text="Google"
+                        android:textColor="@color/white"
+                        android:drawableLeft="@drawable/ic_google"
+                        android:drawablePadding="8dp"
+                        android:padding="12dp"
+                        android:textSize="16sp"/>
+
+                    <!-- Facebook -->
+                    <Button
+                        android:id="@+id/btnFacebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/facebook_button_bg"
+                        android:text="Facebook"
+                        android:textColor="@color/white"
+                        android:drawableLeft="@drawable/ic_facebook"
+                        android:drawablePadding="8dp"
+                        android:padding="12dp"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <!-- Already Have Account -->
+                <TextView
+                    android:id="@+id/gologin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Already have an account? Login"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

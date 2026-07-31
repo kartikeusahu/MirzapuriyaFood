@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Door rectangle -->
+    <path
+        android:fillColor="#454343"
+        android:pathData="M3,3h12v18H3z"/>
+
+    <!-- Arrow pointing right (logout action) -->
+    <path
+        android:fillColor="#332D2D"
+        android:pathData="M21,12l-4,-4v3h-6v2h6v3z"/>
+</vector>

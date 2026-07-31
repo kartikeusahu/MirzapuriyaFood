@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScrollingActivity">
+
+    <!-- AppBar with Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="@string/app_name"
+            app:titleTextColor="@android:color/white"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Scrollable content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/momosImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/momo"
+                android:background="@drawable/image_rounded_corners"
+                android:clipToOutline="true" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veg Momos"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delicious steamed momos served with spicy sauce"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹120"
+                android:textSize="18sp"
+                android:textColor="#FF5722"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="★ 4.8"
+                android:textSize="16sp"
+                android:textColor="#FFD700"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients:\n• Flour - 2 cups\n• Mixed Vegetables - 1 cup\n• Salt - 1 tsp\n• Oil - 2 tbsp\n• Spices - as needed"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/orderButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ORDER NOW"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:background="@drawable/button_rounded" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,71 @@
+<!-- res/layout/item_restaurant_card.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Restaurant Image -->
+        <ImageView
+            android:id="@+id/itemimage"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/cryspymomo"/>
+
+        <!-- Restaurant Name -->
+        <TextView
+            android:id="@+id/itemtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Cryspy Momo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <!-- Cuisine + Price -->
+        <TextView
+            android:id="@+id/itemprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Italian • ₹500 for two"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"/>
+
+        <!-- Rating Row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <ImageView
+                android:id="@+id/itemstar"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_star"
+                app:tint="@color/gold" />
+
+            <TextView
+                android:id="@+id/itemrating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
